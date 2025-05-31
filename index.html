@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  
+  <nav class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <h1 class="text-2xl font-bold">MyPortfolio</h1>
+        <img src="https://img.freepik.com/premium-vector/bilal-name-calligraphy-art-blue-background_1179789-2.jpg" alt="Logo" class="h-12 w-12 rounded-full" >
+        
+
+      <!-- Hamburger for mobile -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <ul id="menu" class="hidden md:flex space-x-6 text-gray-700 font-medium">
+        <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+        <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        <li><a href="#about" class="hover:text-blue-500">About</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+
+  <section class="h-[calc(100vh-80px)] flex items-center">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between w-full">
+      
+
+      <div class="text-left max-w-xl mt-8 md:mt-0">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Hi, I'm Bilal 👋</h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-6">
+          I'm a passionate Front-End Developer focused on building clean,<br>
+          responsive websites using HTML, CSS, and Tailwind CSS. <br>
+          I love turning ideas into beautiful user experiences.
+        </p>
+        <a href="#projects" class="bg-blue-500 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-600 transition">
+          View Projects
+        </a>
+      </div>
+
+      <div class="flex justify-center md:justify-end w-full md:w-auto">
+             <img src="https://img.freepik.com/premium-vector/bilal-name-calligraphy-art-blue-background_1179789-2.jpg" alt="Bilal Image"
+     class="w-60 max-w-full h-60 object-cover rounded-lg shadow-xl" />
+
+      </div>
+
+    </div>
+  </section>
+ 
+  
+<!-- Skills Section -->
+<section id="skills" class="py-10 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">My Skills</h2>
+
+    <!-- Skills Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center justify-center">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML" class="h-12 mx-auto">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" alt="CSS" class="h-12 mx-auto">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="h-12 mx-auto">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="h-12 mx-auto">
+      <!-- Add more icons here if needed -->
+    </div>
+  </div>
+
+
+      <!-- About Me Section -->
+<section id="about" class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+    
+    <!-- Optional Profile Image -->
+    <div class="w-60 h-60 rounded-lg overflow-hidden shadow-md">
+      <img src="https://img.freepik.com/premium-vector/bilal-name-calligraphy-art-blue-background_1179789-2.jpg" alt="Bilal" class="w-full h-full object-cover">
+    </div>
+
+    <!-- About Text -->
+    <div class="max-w-2xl text-center md:text-left">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        I'm Bilal, a Front-End Developer with a strong passion for clean UI design and responsive development.
+        With experience in HTML, CSS, Tailwind CSS, and JavaScript, I enjoy building web experiences that are
+        fast, accessible, and visually appealing.
+      </p>
+      <p class="text-gray-600 text-lg leading-relaxed mt-4">
+        I'm always eager to learn new technologies and collaborate with others to create meaningful digital products.
+      </p>
+    </div>
+</section>
+
+
+
+
+
+    <!-- Projects Section -->
+     <section class="py-16 bg-gray-100">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-4">📚 Currently Learning</h2>
+    <p class="text-lg text-gray-600">Html, CSS ,Tailwind Css, JavaScript , Git & GitHub, Laravel Basics</p>
+  </div>
+</section>
+
+<section id="projects" class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Projects (or lack thereof 😅)</h2>
+    
+    <p class="text-lg text-gray-600 mb-10">
+      I'd show you my amazing projects... if I had any. <br>
+      For now, enjoy this beautifully empty space where my portfolio should be. 🎨🚧
+    </p>
+
+    <div class="border-4 border-dashed border-gray-300 p-10 rounded-lg shadow-inner">
+      <p class="text-gray-500 italic">
+        “Coming soon... hopefully. Or maybe not. We'll see.” 🙃
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-6">Get In Touch</h2>
+    <p class="text-lg text-gray-600 mb-8">
+      Feel free to reach out! I promise I don’t bite (unless it’s pizza 🍕).
+    </p>
+
+    <div class="space-y-6 text-gray-700 text-lg max-w-md mx-auto text-left">
+      <!-- Email -->
+      <p class="flex items-center space-x-3">
+        <!-- Mail Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16 12l-4-4-4 4m0 0l4 4 4-4m-4-4v12" />
+        </svg>
+        <span><strong>Email:</strong> <a href="mailto:bilal@example.com" class="text-blue-600 hover:underline">bilal@example.com</a></span>
+      </p>
+
+      <!-- Phone -->
+      <p class="flex items-center space-x-3">
+        <!-- Phone Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 01.293.707V9a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM16 8v8a2 2 0 01-2 2h-4l-2-2h6a1 1 0 011-1v-1a1 1 0 011-1h1z" />
+        </svg>
+        <span><strong>Phone:</strong> <a href="tel:+1234567890" class="text-green-600 hover:underline">+1 234 567 890</a></span>
+      </p>
+
+      <!-- LinkedIn -->
+      <p class="flex items-center space-x-3">
+        <!-- LinkedIn Icon (custom SVG, not from Heroicons) -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-700" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 0h-14a5 5 0 00-5 5v14a5 5 0 005 5h14a5 5 0 005-5v-14a5 5 0 00-5-5zm-11 19h-3v-10h3v10zm-1.5-11.25a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zm13.5 11.25h-3v-5c0-1.2-.5-2-1.75-2s-2 1-2 2v5h-3v-10h3v1.5c.75-1.25 2.5-1.5 3.5-1.5 3 0 3.5 2 3.5 4.5v5.5z"/>
+        </svg>
+        <span><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/" target="_blank" class="text-blue-700 hover:underline">linkedin.com/in/bilal</a></span>
+      </p>
+
+      <!-- GitHub -->
+      <p class="flex items-center space-x-3">
+        <!-- GitHub Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.724-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.744.084-.729.084-.729 1.205.084 1.838 1.234 1.838 1.234 1.07 1.835 2.809 1.305 3.495.997.108-.776.418-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.124-.303-.536-1.52.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 013.003-.404c1.02.004 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.655 1.656.243 2.873.12 3.176.77.84 1.234 1.91 1.234 3.22 0 4.61-2.804 5.625-5.475 5.922.43.37.823 1.096.823 2.21v3.293c0 .322.218.694.825.576 4.765-1.587 8.2-6.084 8.2-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
+        <span><strong>GitHub:</strong> <a href="https://github.com/bilalnadeem1234" target="_blank" class="text-gray-800 hover:underline">github.com/bilal</a></span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-10">
+
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+
+    <!-- Left: Logo & Copyright -->
+    <div class="mb-6 md:mb-0 text-center md:text-left">
+      <h3 class="text-xl font-bold text-white">MyPortfolio</h3>
+      <p class="text-sm mt-2">&copy; 2025 Bilal. All rights reserved.</p>
+    </div>
+
+    <!-- Center: Navigation Links -->
+    <nav aria-label="Footer navigation" class="flex space-x-6 mb-6 md:mb-0">
+      <a href="#home" class="hover:text-white transition">Home</a>
+      <a href="#skills" class="hover:text-white transition">Skills</a>
+      <a href="#projects" class="hover:text-white transition">Projects</a>
+      <a href="#contact" class="hover:text-white transition">Contact</a>
+    </nav>
+
+    <!-- Right: Social Icons -->
+    <div class="flex space-x-6">
+      <!-- Twitter -->
+      <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" 
+         class="hover:text-white transition" aria-label="Twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.196 4.916 4.916 0 00-8.38 4.482A13.944 13.944 0 011.671 3.149a4.916 4.916 0 001.523 6.555 4.897 4.897 0 01-2.229-.616c-.054 2.28 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.918 4.918 0 004.59 3.417A9.867 9.867 0 010 19.54a13.933 13.933 0 007.548 2.209c9.142 0 14.307-7.721 13.995-14.646A9.936 9.936 0 0024 4.557z"/>
+        </svg>
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/bilal" target="_blank" rel="noopener noreferrer" 
+         class="hover:text-white transition" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19 0h-14a5 5 0 00-5 5v14a5 5 0 005 5h14a5 5 0 005-5v-14a5 5 0 00-5-5zm-11 19h-3v-10h3v10zm-1.5-11.25a1.75 1.75 0 110-3.5 1.75 1.75 0 010 3.5zm13.5 11.25h-3v-5c0-1.2-.5-2-1.75-2s-2 1-2 2v5h-3v-10h3v1.5c.75-1.25 2.5-1.5 3.5-1.5 3 0 3.5 2 3.5 4.5v5.5z"/>
+        </svg>
+      </a>
+      <!-- GitHub -->
+      <a href="https://github.com/bilal" target="_blank" rel="noopener noreferrer" 
+         class="hover:text-white transition" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.724-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.744.084-.729.084-.729 1.205.084 1.838 1.234 1.838 1.234 1.07 1.835 2.809 1.305 3.495.997.108-.776.418-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.235-3.22-.124-.303-.536-1.52.117-3.176 0 0 1.008-.322 3.301 1.
+
+</body>
+</html>
